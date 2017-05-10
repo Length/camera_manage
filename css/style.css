@@ -1,0 +1,410 @@
+@charset "utf-8";
+.ls-sty {
+  list-style: none;
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+a:visited {
+  text-decoration: none;
+}
+a:active {
+  text-decoration: none;
+}
+.cf {
+  display: block;
+  height: 0;
+  visibility: hidden;
+  clear: both;
+  content: '';
+}
+html {
+  -webkit-font-smoothing: antialiased !important;
+}
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+@font-face {
+  font-family: '微软雅黑';
+  font-style: normal;
+  font-weight: normal;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+.main-nav {
+  list-style: none;
+  list-style-type: none;
+  margin-bottom: 0;
+}
+#navigation {
+  background: #368ee0;
+  height: 50px;
+  display: block;
+}
+.container-fluid {
+  height: 50px;
+}
+.brand {
+  color: #fff;
+  font-size: 20px;
+  line-height: 50px;
+  display: inline-block;
+  width: 80px;
+  height: 50px;
+  text-align: center;
+  margin-left: 20px;
+  margin-right: 50px;
+  float: left;
+}
+.brand:hover {
+  text-decoration: none;
+  color: #fff;
+}
+.brand:active {
+  text-decoration: none;
+}
+.brand:visited {
+  text-decoration: none;
+}
+.toggle-nav:hover {
+  background-color: #1b67af;
+  color: #fff;
+}
+.toggle-nav {
+  display: inline-block;
+  color: #fff;
+  font-size: 16px;
+  float: left;
+}
+.toggle-nav span {
+  padding: 15px;
+}
+#navigation .main-nav {
+  float: left;
+}
+#navigation .main-nav > li {
+  float: left;
+  margin: 0;
+}
+#navigation .main-nav > li.active > a {
+  background: #fff;
+  color: #2a2a2a;
+}
+#navigation .main-nav > li > a {
+  display: block;
+  padding: 15px 25px;
+  line-height: 20px;
+  color: #fff;
+}
+#navigation .main-nav > li.active > a .caret {
+  border-top-color: #333;
+}
+#navigation .main-nav > li.active > a:hover .caret {
+  border-top-color: #333;
+}
+#navigation .main-nav > li.open > a {
+  background: #1e74c5;
+  text-decoration: none;
+}
+#navigation .main-nav > li > a:hover {
+  text-decoration: none;
+  background: #1e74c5;
+}
+#navigation .main-nav li.open .dropdown-menu li a {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+#navigation .main-nav li.open .dropdown-menu li a:hover {
+  background: #1e74c5;
+  color: #fff;
+}
+#navigation .user {
+  display: block;
+  height: 50px;
+  float: right;
+  line-height: 50px;
+}
+#navigation .user .icon-nav > li {
+  float: right;
+  list-style: none;
+  list-style-type: none;
+  margin-right: 5px;
+}
+#navigation .user .icon-nav > li a {
+  color: #fff;
+}
+#navigation .user .icon-nav > li .dropdown-menu a {
+  color: #2a2a2a;
+}
+#navigation .user .dropdown {
+  margin-right: 10px;
+}
+#navigation .user .dropdown a {
+  display: block;
+  color: #fff;
+}
+#navigation .user .dropdown a:hover {
+  background: #1e74c5;
+  color: #fff;
+}
+#navigation .user .dropdown .dropdown-menu a {
+  color: #2a2a2a;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+#navigation .user .icon-nav li.open .dropdown-menu {
+  margin-left: -100px;
+}
+#navigation .user .icon-nav li.open .dropdown-menu li a:hover {
+  background: #1e74c5;
+  color: #fff;
+}
+#navigation .user .icon-nav > li > a i {
+  color: #fff;
+  font-size: 16px;
+}
+#navigation .user .dropdown > a {
+  padding-left: 17px;
+  padding-right: 17px;
+}
+#navigation .user .dropdown #avaster {
+  margin-left: 5px;
+}
+.container-fluid {
+  padding: 0;
+}
+.main-content {
+  margin: 0;
+  padding: 0;
+  margin-top: 50px;
+}
+.left-sidebar {
+  width: 200px;
+  height: 100%;
+  float: left;
+  background: #000;
+}
+.page_title {
+  margin-left: 45%;
+}
+.register {
+  padding: 20px;
+  font-weight: 700;
+  -moz-border-radius: 10px;
+  /* Gecko browsers */
+  -webkit-border-radius: 10px;
+  /* Webkit browsers */
+  border-radius: 10px;
+  /* W3C syntax */
+  margin-left: 20%;
+}
+.uploadgroup {
+  width: 6.25rem;
+  background: #ff8040;
+  margin-left: 12.5rem;
+}
+#left {
+  width: 200px;
+  position: absolute;
+  left: 0;
+  top: 50px;
+  bottom: 0;
+  background: #eee;
+  overflow-x: visible;
+  height: 100%;
+}
+#left.mobile-show {
+  position: fixed;
+  z-index: 1000;
+}
+#left.full {
+  bottom: auto;
+  height: auto;
+}
+#left.sidebar-fixed {
+  position: fixed;
+  top: 40px;
+  overflow-x: hidden;
+}
+#left.sidebar-fixed .ui-resizable-handle {
+  right: 0;
+}
+#left .subnav {
+  margin-top: 15px;
+}
+#left .subnav:hover .subnav-title .toggle-subnav > i {
+  display: block;
+}
+#left .subnav .subnav-content {
+  *zoom: 1;
+  padding: 10px 20px;
+}
+#left .subnav .subnav-content:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+#left .subnav .subnav-content.less {
+  padding: 10px 13px;
+}
+#left .subnav .subnav-title {
+  *zoom: 1;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+#left .subnav .subnav-title:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+#left .subnav .subnav-title span {
+  margin-left: 20px;
+  font-size: 18px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+#left .subnav .subnav-title span > i {
+  font-size: 14px;
+  vertical-align: top;
+  padding-top: 5px;
+  margin-right: 5px;
+}
+#left .subnav .subnav-title .toggle-subnav {
+  color: #444;
+  padding: 1px 6px;
+  text-decoration: none;
+  display: block;
+  position: relative;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+#left .subnav .subnav-title .toggle-subnav > i {
+  position: absolute;
+  font-size: 14px;
+  left: 10px;
+  top: 4px;
+  display: none;
+}
+#left .subnav .subnav-title .toggle-subnav:hover {
+  color: #222;
+}
+#left .subnav .subnav-menu {
+  list-style-type: none;
+  margin: 5px 0;
+  padding: 0;
+}
+#left .subnav .subnav-menu > li {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+#left .subnav .subnav-menu > li.dropdown > a {
+  position: relative;
+}
+#left .subnav .subnav-menu > li.dropdown > a:after {
+  position: absolute;
+  right: 10px;
+  top: 9px;
+  width: 5px;
+  border-color: transparent;
+  border-left-color: #999;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  content: " ";
+}
+#left .subnav .subnav-menu > li.dropdown.open > a {
+  background: #ccc;
+  color: #333;
+}
+#left .subnav .subnav-menu > li.dropdown.open .dropdown-menu {
+  left: 100%;
+  top: 0;
+  border-color: #aaa;
+  border-left: 0;
+  margin: 0;
+}
+#left .subnav .subnav-menu > li.dropdown.open .dropdown-menu .dropdown-submenu .dropdown-menu {
+  border-left: 2px solid #999;
+}
+#left .subnav .subnav-menu > li.dropdown.open .dropdown-menu .dropdown-submenu:hover > a,
+#left .subnav .subnav-menu > li.dropdown.open .dropdown-menu .dropdown-submenu:focus > a {
+  background: #ccc;
+  color: #333;
+}
+#left .subnav .subnav-menu > li.dropdown.open .dropdown-menu .dropdown-submenu:hover > a:after,
+#left .subnav .subnav-menu > li.dropdown.open .dropdown-menu .dropdown-submenu:focus > a:after {
+  border-left-color: #999;
+}
+#left .subnav .subnav-menu > li > a {
+  color: #555;
+  display: block;
+  padding: 5px 0 5px 27px;
+  text-decoration: none;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+#left .subnav .subnav-menu > li > a:hover {
+  background: #ddd;
+  color: #222;
+}
+#left .subnav .subnav-menu > li.active > a {
+  background: #ccc;
+  color: #222;
+  font-weight: bold;
+}
+.search-form {
+  height: 35px;
+  margin: 0;
+}
+.search-form > .search-pane {
+  margin: 5px;
+  height: 30px;
+  background: #fff;
+  border: 1px solid #ccc;
+}
+.search-form > .search-pane > input {
+  background: none;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border: 0;
+  display: block;
+  float: left;
+  font-size: 12px;
+  line-height: 20px;
+  padding: 4px 6px;
+  margin-bottom: 0;
+  width: 150px;
+  outline: none;
+}
+.search-form > .search-pane > input:focus {
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.search-form > .search-pane button[type="submit"] {
+  float: right;
+  background: #368ee0;
+  color: #fff;
+  border: 0;
+  margin: 2px 2px 0px 0;
+  line-height: 19px;
+  min-height: 24px;
+}
+.search-form .search-btn {
+  width: 24px;
+  height: 24px;
+}
